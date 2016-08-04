@@ -1,5 +1,5 @@
-unless node['certbot-cdh']['cert-owner'] && node['certbot-cdh']['cert-owner']['email']
-  raise "You need to define a node['certbot-cdh']['cert-owner']['email'] to use certbot"
+unless node['certbot']['cert-owner'] && node['certbot']['cert-owner']['email']
+  raise "You need to define a node['certbot']['cert-owner']['email'] to use certbot"
 end
 
 certbot_group_domains = {}
@@ -60,8 +60,8 @@ certbot_group_domains.each do |group_name, certificate_data|
   end
 
   certbot_certonly_webroot group_name do
-    webroot_path node['certbot-cdh']['sandbox']['webroot_path']
-    email node['certbot-cdh']['cert-owner']['email']
+    webroot_path node['certbot']['sandbox']['webroot_path']
+    email node['certbot']['cert-owner']['email']
     domains certificate_data[:domains]
     expand true
     agree_tos true
