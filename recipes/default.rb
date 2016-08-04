@@ -32,7 +32,7 @@ certbot_group_domains = {}
   end
 end
 
-include_recipe 'certbot-cdh::default'
+include_recipe 'certbot::default'
 include_recipe 'config-driven-helper::ssl-cert-self-signed'
 
 certbot_group_domains.each do |group_name, certificate_data|
