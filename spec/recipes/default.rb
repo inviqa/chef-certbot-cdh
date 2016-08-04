@@ -1,6 +1,6 @@
 require 'util'
 
-describe 'certbot::cdh' do
+describe 'certbot-cdh::default' do
   before do
     allow_any_instance_of(Chef::Recipe).to receive(:include_recipe)
   end
