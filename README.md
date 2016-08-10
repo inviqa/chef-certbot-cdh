@@ -97,6 +97,33 @@ use this to set up their vhost's ssl configuration.
 See the spec for examples of using ['ssl']['use_sni'] and ['ssl']['san_group']
 to split up the certificates per config-driven-helper site.
 
+Contributing
+------------
+
+1. Fork the repository on Github
+2. Create a named feature branch (like `add_component_x`)
+3. Write you change
+4. Write tests for your change (if applicable)
+5. Run the tests, ensuring they all pass
+6. Submit a Pull Request using Github
+
+Supermarket share
+-----------------
+
+[stove](http://sethvargo.github.io/stove/) is used to create git tags and
+publish the cookbook on supermarket.chef.io.
+
+To tag/publish you need to be a contributor to the cookbook on Supermarket and
+run:
+
+```
+$ stove login --username <your username> --key ~/.chef/<your username>.pem
+$ rake publish
+```
+
+It will take the version defined in metadata.rb, create a tag, and push the
+cookbook to http://supermarket.chef.io/cookbooks/certbot-cdh
+
 License and Authors
 -------------------
 - Author:: Andy Thompson
