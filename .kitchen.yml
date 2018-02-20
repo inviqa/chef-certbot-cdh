@@ -16,3 +16,6 @@ suites:
     run_list:
       - recipe[certbot-cdh::default]
     attributes:
+      certbot:
+        cert-owner:
+          email: test@example.org
