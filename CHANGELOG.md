@@ -1,4 +1,4 @@
-## 0.2.0 (30th August 2018)
+## 0.2.0 (30th October 2018)
 
   * Support config-driven-helper version 3
 
