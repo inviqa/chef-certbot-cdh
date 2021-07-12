@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.5.2)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     artifactory (2.8.2)
     ast (2.4.0)
     backports (3.11.1)
@@ -145,7 +145,7 @@ GEM
     mixlib-versioning (1.2.2)
     molinillo (0.4.5)
     multi_json (1.13.1)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -160,7 +160,8 @@ GEM
     nio4r (2.2.0)
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
-    octokit (4.8.0)
+    octokit (4.21.0)
+      faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     ohai (8.26.1)
       chef-config (>= 12.5.0.alpha.1, < 14)
@@ -181,7 +182,7 @@ GEM
     polyglot (0.3.5)
     powerpack (0.1.1)
     proxifier (1.0.3)
-    public_suffix (3.0.2)
+    public_suffix (4.0.6)
     rack (2.2.3)
     rainbow (2.2.2)
       rake
@@ -234,9 +235,9 @@ GEM
     ruby-progressbar (1.9.0)
     rufus-lru (1.1.0)
     safe_yaml (1.0.4)
-    sawyer (0.8.1)
-      addressable (>= 2.3.5, < 2.6)
-      faraday (~> 0.8, < 1.0)
+    sawyer (0.8.2)
+      addressable (>= 2.3.5)
+      faraday (> 0.8, < 2.0)
     semverse (1.2.1)
     serverspec (2.41.3)
       multi_json
